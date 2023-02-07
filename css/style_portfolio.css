@@ -858,12 +858,12 @@ ol {
   Footer
 -----------------------*/
 .footer {
-  background: #000;
+  background: #ffffff;
 }
 
 .footer__top {
   padding: 30px 0;
-  border-bottom: 1px solid rgb(255, 255, 255);
+  border-bottom: 1px solid rgb(0, 0, 0);
 }
 
 .footer__top__logo {
@@ -879,10 +879,10 @@ ol {
 .footer__top__social a {
   display: inline-block;
   font-size: 15px;
-  color: #000;
+  color: #fff;
   height: 40px;
   width: 40px;
-  background: rgb(255, 255, 255);
+  background: rgb(0, 0, 0);
   border-radius: 50%;
   line-height: 42.5px;
   text-align: center;
@@ -901,7 +901,7 @@ ol {
   margin-bottom: 35px;
 }
 .footer__option__item h5 {
-  color: #fff;
+  color: #000;
   font-weight: 700;
   margin-bottom: 35px;
 }
@@ -911,11 +911,11 @@ ol {
 }
 .footer__option__item .read__more {
   font-size: 16px;
-  color: #fff;
+  color: #000;
 }
 .footer__option__item .read__more span {
   font-size: 16px;
-  color: #fff;
+  color: #000;
   opacity: 0.5;
   position: relative;
   top: 4px;
@@ -931,7 +931,7 @@ ol {
   line-height: 32px;
 }
 .footer__option__item ul li a:hover {
-  color:white;
+  color:rgb(0, 0, 0);
 }
 .footer__option__item form {
   position: relative;
@@ -1207,7 +1207,7 @@ ol {
   Portfolio
 -----------------------*/
 .portfolio {
-  background: #100028;
+  background: #000;
 }
 
 .portfolio__filter {
@@ -1258,7 +1258,7 @@ ol {
   width: 50px;
   line-height: 50px;
   text-align: center;
-  border: 1px solid rgba(255, 255, 255, 0.7);
+  border: 1px solid rgb(255, 255, 255);
   border-radius: 50%;
 }
 
@@ -1279,7 +1279,7 @@ ol {
   bottom: 0;
   height: 1px;
   width: 100%;
-  background: #333;
+  background: #fff;
   content: "";
   -webkit-transition: all, 0.3s;
   -o-transition: all, 0.3s;
@@ -1338,10 +1338,10 @@ ol {
 }
 .pagination__option .number__pagination {
   font-size: 18px;
-  color: #ffffff;
+  color: #000;
   height: 50px;
   width: 50px;
-  background: rgba(242, 242, 242, 0.1);
+  background: rgb(255, 255, 255);
   line-height: 50px;
   text-align: center;
   display: inline-block;
