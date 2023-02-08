@@ -1684,7 +1684,7 @@ ol {
   Contact Widget
 -----------------------*/
 .contact-widget {
-  background: #100028;
+  background: #000;
   padding-bottom: 70px;
 }
 
@@ -1695,7 +1695,7 @@ ol {
 .contact__widget__item__icon {
   height: 70px;
   width: 70px;
-  border: 1px solid rgba(225, 225, 225, 0.5);
+  border: 1px solid rgb(255,255,255);
   line-height: 80px;
   text-align: center;
   border-radius: 50%;
@@ -1704,7 +1704,7 @@ ol {
 }
 .contact__widget__item__icon i {
   font-size: 30px;
-  color: #ffffff;
+  color: #fff;
 }
 
 .contact__widget__item__text {
@@ -1713,7 +1713,7 @@ ol {
 }
 .contact__widget__item__text h4 {
   font-size: 22px;
-  color: #ffffff;
+  color: #fff;
   font-weight: 700;
   margin-bottom: 10px;
 }
@@ -1725,7 +1725,7 @@ ol {
   Contact
 -----------------------*/
 .contact {
-  background: #100028;
+  background: #000;
   padding-top: 0;
   overflow: hidden;
 }
@@ -1738,7 +1738,7 @@ ol {
 }
 
 .contact__form h3 {
-  color: #ffffff;
+  color: #fff;
   font-weight: 700;
   text-transform: uppercase;
   margin-bottom: 35px;

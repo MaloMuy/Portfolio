@@ -913,6 +913,9 @@ ol {
   font-size: 16px;
   color: #fff;
 }
+.footer__option__item .read__more a:hover {
+  color:#adadad;
+}
 .footer__option__item .read__more span {
   font-size: 16px;
   color: #fff;
