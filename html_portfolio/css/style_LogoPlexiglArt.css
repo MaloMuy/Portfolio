@@ -761,12 +761,12 @@ ol {
   Footer
 -----------------------*/
 .footer {
-  background: #fff;
+  background: #000;
 }
 
 .footer__top {
   padding: 30px 0;
-  border-bottom: 1px solid rgb(0, 0, 0);
+  border-bottom: 1px solid rgb(255, 255, 255);
 }
 
 .footer__top__logo {
@@ -782,10 +782,10 @@ ol {
 .footer__top__social a {
   display: inline-block;
   font-size: 15px;
-  color: #fff;
+  color: #000;
   height: 40px;
   width: 40px;
-  background: rgb(0, 0, 0);
+  background: rgb(255, 255, 255);
   border-radius: 50%;
   line-height: 42.5px;
   text-align: center;
@@ -804,7 +804,7 @@ ol {
   margin-bottom: 35px;
 }
 .footer__option__item h5 {
-  color: #000;
+  color: #fff;
   font-weight: 700;
   margin-bottom: 35px;
 }
@@ -814,11 +814,11 @@ ol {
 }
 .footer__option__item .read__more {
   font-size: 16px;
-  color: #000;
+  color: #fff;
 }
 .footer__option__item .read__more span {
   font-size: 16px;
-  color: #000;
+  color: #fff;
   opacity: 0.5;
   position: relative;
   top: 4px;
@@ -834,7 +834,7 @@ ol {
   line-height: 32px;
 }
 .footer__option__item ul li a:hover {
-  color:rgb(0, 0, 0);
+  color:rgb(255, 255, 255);
 }
 .footer__option__item form {
   position: relative;
@@ -865,7 +865,7 @@ ol {
 }
 .footer__option__item form button {
   font-size: 20px;
-  color: #fff;
+  color: #000;
   border: none;
   height: 50px;
   width: 50px;
@@ -909,7 +909,7 @@ ol {
 
 .breadcrumb__links a {
   font-size: 16px;
-  color: #000;
+  color: #fff;
   font-weight: 300;
   display: inline-block;
   margin-right: 32px;
@@ -939,8 +939,8 @@ ol {
 }
 
 .about__pic__item {
-  height: 320px;
-  margin-right: -10px;
+  height: 400px;
+  margin-right: -300px;
   margin-bottom: 20px;
 }
 .about__pic__item.about__pic__item--large {
@@ -1247,7 +1247,6 @@ ol {
   display: inline-block;
   margin-right: 6px;
 }
-
 
 /*---------------------
   Contact Widget

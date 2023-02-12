@@ -901,7 +901,7 @@ ol {
 }
 
 .breadcrumb__text h2 {
-  color: #000;
+  color: #fff;
   font-size: 50px;
   font-weight: 700;
   margin-bottom: 12px;
@@ -939,8 +939,8 @@ ol {
 }
 
 .about__pic__item {
-  height: 320px;
-  margin-right: -10px;
+  height: 400px;
+  margin-right: -300px;
   margin-bottom: 20px;
 }
 .about__pic__item.about__pic__item--large {
@@ -1247,7 +1247,6 @@ ol {
   display: inline-block;
   margin-right: 6px;
 }
-
 
 /*---------------------
   Contact Widget

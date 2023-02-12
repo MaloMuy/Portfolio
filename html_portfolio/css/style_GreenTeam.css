@@ -691,6 +691,8 @@ ol {
   margin-bottom: 0;
 }
 
+
+
 /*---------------------
   Latest
 -----------------------*/
@@ -909,7 +911,7 @@ ol {
 
 .breadcrumb__links a {
   font-size: 16px;
-  color: #000;
+  color: #fff;
   font-weight: 300;
   display: inline-block;
   margin-right: 32px;
@@ -1247,7 +1249,6 @@ ol {
   display: inline-block;
   margin-right: 6px;
 }
-
 
 /*---------------------
   Contact Widget
@@ -1651,7 +1652,6 @@ ol {
   .contact__map {
     margin-bottom: 40px;
   }
-
   .about__pic__item {
     margin-right: 0;
   }
