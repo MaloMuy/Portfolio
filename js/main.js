@@ -286,3 +286,20 @@
     })();
 
 })(jQuery);
+
+// JavaScript
+const buttons = document.querySelectorAll('.filter-button');
+const items = document.querySelectorAll('.item');
+
+buttons.forEach(button => {
+  button.addEventListener('click', () => {
+    const filter = button.getAttribute('data-filter');
+    items.forEach(item => {
+      if (!item.classList.contains(filter)) {
+        item.classList.add('hide');
+      } else {
+        item.classList.remove('hide');
+      }
+    });
+  });
+});

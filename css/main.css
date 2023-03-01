@@ -2740,7 +2740,7 @@ input::-moz-focus-inner {
   width: 89%;
   max-width: 1400px;
   margin-top: 11.2rem;
-  margin-right: -10px;
+  margin-right: auto;
   margin-left: auto;
 }
 
@@ -2762,6 +2762,54 @@ input::-moz-focus-inner {
   transition: all 0.5s ease-in-out;
 }
 
+.filter-button,
+button.filter-button,
+input[type="submit"].filter-button,
+input[type="reset"].filter-button,
+input[type="button"].filter-button {
+  background: #000000;
+  border-color: #000000;
+  color: #ffffff;
+  float: left;
+  padding: 0 20px;
+  margin-bottom: 40px;
+}
+
+.btn.filter-button:hover,
+button.filter-button:hover,
+input[type="submit"].filter-button:hover,
+input[type="reset"].filter-button:hover,
+input[type="button"].filter-button:hover,
+.btn.filter-button:focus,
+button.filter-button:focus,
+input[type="submit"].filter-button:focus,
+input[type="reset"].filter-button:focus,
+input[type="button"].filter-button:focus {
+  background: #cf1767;
+  border-color: #cf1767;
+  display: block;
+  justify-content: space-between;
+  margin: auto;
+}
+
+.portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.item {
+  width: calc(33.33% - 10px);
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.hide {
+  display: none;
+}
+
 /* item-folio thumb
  * -------------------------------------- */
 .item-folio__thumb {
@@ -2777,7 +2825,7 @@ input::-moz-focus-inner {
 .item-folio__thumb .thumb-link::before,
 .item-folio__thumb .thumb-link::after,
 .item-folio__thumb .thumb-link .item-folio__project-link {
-  transition: all 0.2s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .item-folio__thumb .thumb-link::before {
