@@ -7,7 +7,7 @@
 
     "use strict";
     
-    var cfg = {
+    let cfg = {
         scrollDuration : 800, // smoothscroll duration
         mailChimpURL   : ''   // mailchimp url
     },
@@ -16,13 +16,13 @@
 
     // Add the User Agent to the <html>
     // will be used for IE10/IE11 detection (Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; Trident/6.0; rv:11.0))
-    var doc = document.documentElement;
+    let doc = document.documentElement;
     doc.setAttribute('data-useragent', navigator.userAgent);
 
 
    /* Preloader
     * -------------------------------------------------- */
-    var ssPreloader = function() {
+    let ssPreloader = function() {
         
         $("html").addClass('ss-preload');
 
@@ -47,9 +47,9 @@
 
    /* Menu on Scrolldown
     * ------------------------------------------------------ */
-    var ssMenuOnScrolldown = function() {
+    let ssMenuOnScrolldown = function() {
         
-        var hdr = $('.s-header'),
+        let hdr = $('.s-header'),
             hdrTop = $('.s-header').offset().top;
 
         $WIN.on('scroll', function() {
@@ -67,9 +67,9 @@
 
    /* Mobile Menu
     * ---------------------------------------------------- */ 
-    var ssMobileMenu = function() {
+    let ssMobileMenu = function() {
 
-        var toggleButton = $('.header-menu-toggle'),
+        let toggleButton = $('.header-menu-toggle'),
             nav = $('.header-nav-wrap');
 
         toggleButton.on('click', function(event){
@@ -98,22 +98,22 @@
 
    /* Highlight the current section in the navigation bar
     * ------------------------------------------------------ */
-    var ssWaypoints = function() {
+    let ssWaypoints = function() {
 
-        var sections = $(".target-section"),
+        let sections = $(".target-section"),
             navigation_links = $(".header-main-nav li a");
 
         sections.waypoint( {
 
             handler: function(direction) {
 
-                var active_section;
+                let active_section;
 
                 active_section = $('section#' + this.element.id);
 
                 if (direction === "up") active_section = active_section.prevAll(".target-section").first();
 
-                var active_link = $('.header-main-nav li a[href="#' + active_section.attr("id") + '"]');
+                let active_link = $('.header-main-nav li a[href="#' + active_section.attr("id") + '"]');
 
                 navigation_links.parent().removeClass("current");
                 active_link.parent().addClass("current");
@@ -129,9 +129,9 @@
 
    /* Masonry
     * ---------------------------------------------------- */ 
-    var ssMasonryFolio = function () {
+    let ssMasonryFolio = function () {
         
-        var containerBricks = $('.masonry');
+        let containerBricks = $('.masonry');
 
         containerBricks.imagesLoaded(function () {
             containerBricks.masonry({
@@ -145,15 +145,15 @@
 
    /* photoswipe
     * ----------------------------------------------------- */
-    var ssPhotoswipe = function() {
-        var items = [],
+    let ssPhotoswipe = function() {
+        let items = [],
             $pswp = $('.pswp')[0],
             $folioItems = $('.item-folio');
 
         // get items
         $folioItems.each( function(i) {
 
-            var $folio = $(this),
+            let $folio = $(this),
                 $thumbLink =  $folio.find('.thumb-link'),
                 $title = $folio.find('.item-folio__title'),
                 $caption = $folio.find('.item-folio__caption'),
@@ -164,7 +164,7 @@
                 $width  = $size[0],
                 $height = $size[1];
         
-            var item = {
+            let item = {
                 src  : $href,
                 w    : $width,
                 h    : $height
@@ -182,13 +182,13 @@
 
             $(this).find('.thumb-link').on('click', function(e) {
                 e.preventDefault();
-                var options = {
+                let options = {
                     index: i,
                     showHideOpacity: true
                 }
 
                 // initialize PhotoSwipe
-                var lightBox = new PhotoSwipe($pswp, PhotoSwipeUI_Default, items, options);
+                let lightBox = new PhotoSwipe($pswp, PhotoSwipeUI_Default, items, options);
                 lightBox.init();
             });
 
@@ -198,7 +198,7 @@
 
    /* slick slider
     * ------------------------------------------------------ */
-    var ssSlickSlider = function() {
+    let ssSlickSlider = function() {
         
         $('.testimonials__slider').slick({
             arrows: false,
@@ -216,10 +216,10 @@
 
    /* Smooth Scrolling
     * ------------------------------------------------------ */
-    var ssSmoothScroll = function() {
+    let ssSmoothScroll = function() {
         
         $('.smoothscroll').on('click', function (e) {
-            var target = this.hash,
+            let target = this.hash,
             $target    = $(target);
             
                 e.preventDefault();
@@ -243,7 +243,7 @@
 
    /* Alert Boxes
     * ------------------------------------------------------ */
-    var ssAlertBoxes = function() {
+    let ssAlertBoxes = function() {
 
         $('.alert-box').on('click', '.alert-box__close', function() {
             $(this).parent().fadeOut(500);
@@ -254,7 +254,7 @@
 
    /* Animate On Scroll
     * ------------------------------------------------------ */
-    var ssAOS = function() {
+    let ssAOS = function() {
         
         AOS.init( {
             offset: 200,

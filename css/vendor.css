@@ -1614,6 +1614,7 @@ over element that should close gallery
 .pswp__button--zoom {
   display: none;
   background-position: -88px 0;
+  color: white;
 }
 
 .pswp--zoom-allowed .pswp__button--zoom {
@@ -1656,7 +1657,7 @@ Arrow buttons hit area
 .pswp__button--arrow--right:before {
   content: '';
   top: 0;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(255, 255, 255, 0.3);
   height: 30px;
   width: 32px;
   position: absolute;
@@ -1686,7 +1687,7 @@ Arrow buttons hit area
 
 .pswp__share-modal {
   display: block;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(255, 255, 255, 0.5);
   width: 100%;
   height: 100%;
   top: 0;
@@ -1714,8 +1715,8 @@ Arrow buttons hit area
   display: block;
   width: auto;
   right: 44px;
-  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0 2px 5px rgba(255, 255, 255, 0.25);
+  box-shadow: 0 2px 5px rgba(255, 255, 255, 0.25);
   -webkit-transform: translateY(6px);
   -ms-transform: translateY(6px);
   transform: translateY(6px);
