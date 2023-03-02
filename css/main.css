@@ -2773,6 +2773,13 @@ input[type="button"].filter-button {
   float: left;
   padding: 0 20px;
   margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+#filter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .btn.filter-button:hover,
@@ -2787,9 +2794,9 @@ input[type="reset"].filter-button:focus,
 input[type="button"].filter-button:focus {
   background: #cf1767;
   border-color: #cf1767;
-  display: block;
-  justify-content: space-between;
-  margin: auto;
+  float: left;
+  padding: 0 20px;
+  margin-bottom: 40px;
 }
 
 .portfolio {
@@ -2822,6 +2829,7 @@ input[type="button"].filter-button:focus {
   position: relative;
 }
 
+.filter-button,
 .item-folio__thumb .thumb-link::before,
 .item-folio__thumb .thumb-link::after,
 .item-folio__thumb .thumb-link .item-folio__project-link {
