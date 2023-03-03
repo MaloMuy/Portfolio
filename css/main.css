@@ -2510,7 +2510,7 @@ input::-moz-focus-inner {
   width: 100%;
   height: 100%;
   opacity: .3;
-  background: radial-gradient(circle, rgba(0, 0, 0, 0) 0%, black 80%);
+  background: radial-gradient(circle, rgba(255, 255, 255, 0) 0%, rgb(255, 255, 255) 80%);
 }
 
 .s-services::before {
@@ -2520,13 +2520,13 @@ input::-moz-focus-inner {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #050505;
+  background-color: #ffffff;
   opacity: .85;
 }
 
 .s-services h4 {
   font-weight: 400;
-  color: #ffffff;
+  color: #000;
 }
 
 .s-services a {
@@ -2536,7 +2536,7 @@ input::-moz-focus-inner {
 .s-services a:hover,
 .s-services a:focus,
 .s-services a:active {
-  color: #ffffff;
+  color: #000000;
 }
 
 .services-list {
@@ -2553,7 +2553,7 @@ input::-moz-focus-inner {
 }
 
 .services-list .item-service__content {
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
   padding-top: 3.6rem;
 }
 
@@ -2721,7 +2721,7 @@ input::-moz-focus-inner {
  .s-works {
   padding-top: 19.2rem;
   padding-bottom: 16rem;
-  background-color: #ffffff;
+  background-color: #000000;
 }
 
 .masonry-wrap {
@@ -2748,7 +2748,7 @@ input::-moz-focus-inner {
 .item-folio {
   text-align: center;
   padding: 30px;
-  background-color: #EFEFEF;
+  background-color: #1d1d1d;
 }
 
 .filter-button,
@@ -2895,12 +2895,12 @@ input[type="button"].filter-button:focus {
 
 .item-folio__title {
   font-weight: 500;
-  color: #000000;
+  color: #ffffff;
 }
 
 .item-folio__cat {
   font-weight: 300;
-  color: rgba(0, 0, 0, 0.7);
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .item-folio__cat::before {
@@ -3318,7 +3318,7 @@ input[type="button"].filter-button:focus {
 
 .contact-email {
   font-family: "Roboto", sans-serif;
-  font-size: 11.2rem;
+  font-size: 8rem;
   font-weight: 400;
   line-height: 1;
   margin: 5.6rem 0 8rem;
