@@ -45,7 +45,42 @@
  *
  * =================================================================== */
 
+/* ===================================================================
+ * # Scroll top
+ * 
+ * ------------------------------------------------------------------- */
 
+ * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+#progress {
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+  height: 70px;
+  width: 70px;
+  display: none;
+  place-items: center;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+#progress-value {
+  display: block;
+  height: calc(100% - 15px);
+  width: calc(100% - 15px);
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 35px;
+  color: #001a2e;
+}
 
 /* ===================================================================
  * # base style overrides
@@ -53,6 +88,7 @@
  * ------------------------------------------------------------------- */
 html {
   font-size: 10px;
+  scroll-behavior: smooth;
 }
 
 @media screen and (max-width:400px) {
@@ -96,6 +132,7 @@ a:hover,
 a:active {
   outline: 0;
 }
+
 
 
 
@@ -2494,34 +2531,8 @@ input::-moz-focus-inner {
  * ------------------------------------------------------------------- */
 .s-services {
   padding-top: 19.2rem;
-  padding-bottom: 16rem;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  background-image: url(../images/services-bg.jpg);
-  color: rgba(255, 255, 255, 0.7);
-  position: relative;
-}
-
-.s-services .shadow-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: .3;
-  background: radial-gradient(circle, rgba(255, 255, 255, 0) 0%, rgb(255, 255, 255) 80%);
-}
-
-.s-services::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  padding-bottom: 16.8rem;
   background-color: #ffffff;
-  opacity: .85;
 }
 
 .s-services h4 {
